@@ -25,7 +25,7 @@ const menuItems = [
     id: 3,
     title: 'Ramen',
     description: 'Japanese noodle soup',
-    imageName: `${process.env.PUBLIC_URL}/images/ramen.png`,
+    imageName: '/images/ramen.png',
     price: 7.99,
   },
   {
