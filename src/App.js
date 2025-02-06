@@ -18,63 +18,63 @@ const menuItems = [
     id: 2,
     title: 'Sushi',
     description: 'Japanese rice rolls',
-    imageName: 'sushi.png',
+    imageName: `${process.env.PUBLIC_URL}/images/sushi.png`,
     price: 6.99,
   },
   {
     id: 3,
     title: 'Ramen',
     description: 'Japanese noodle soup',
-    imageName: 'ramen.png',
+    imageName: `${process.env.PUBLIC_URL}/images/ramen.png`,
     price: 7.99,
   },
   {
     id: 4,
     title: 'Matcha Cake',
     description: 'Japanese green tea cake',
-    imageName: 'matcha-cake.png',
+    imageName: `${process.env.PUBLIC_URL}/images/matcha-cake.png`,
     price: 4.99,
   },
   {
     id: 5,
     title: 'Mochi',
     description: 'Japanese rice cake',
-    imageName: 'mochi.png',
+    imageName: `${process.env.PUBLIC_URL}/images/mochi.png`,
     price: 3.99,
   },
   {
     id: 6,
     title: 'Yakitori',
     description: 'Japanese skewered chicken',
-    imageName: 'yakitori.png',
+    imageName: `${process.env.PUBLIC_URL}/images/yakitori.png`,
     price: 2.99,
   },
   {
     id: 7,
     title: 'Takoyaki',
     description: 'Japanese octopus balls',
-    imageName: 'takoyaki.png',
+    imageName: `${process.env.PUBLIC_URL}/images/takoyaki.png`,
     price: 5.99,
   },
   {
     id: 8,
     title: 'Sashimi',
     description: 'Japanese raw fish',
-    imageName: 'sashimi.png',
+    imageName: `${process.env.PUBLIC_URL}/images/sashimi.png`,
     price: 8.99,
   },
   {
     id: 9,
     title: 'Okonomiyaki',
     description: 'Japanese savory pancake',
-    imageName: 'okonomiyaki.png',
+    imageName: `${process.env.PUBLIC_URL}/images/okonomiyaki.png`,
     price: 6.99,
   },
   {
     id: 10,
     title: 'Katsu Curry',
     description: 'Japanese curry with fried pork',
-    imageName: 'katsu-curry.png',
+    imageName: `${process.env.PUBLIC_URL}/images/katsu-curry.png`,
     price: 9.99,
   }
 ];
@@ -83,7 +83,7 @@ const menuItems = [
 function App() {
   return (
     <div>
-      <Header title="Japanese Restaurant" description="Delicious mmm" logo="/images/Elefante_Full_exterior.jpg"/>
+      <Header title="Japanese Restaurant" description="Delicious mmm" logo={`${process.env.PUBLIC_URL}/images/Elefante_Full_exterior.jpg`}/>
       <div className="menu">
         {menuItems.map((item) => (
           <MenuItem title={item.title} description={item.description} price={item.price} img={item.imageName}/>
