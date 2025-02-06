@@ -1,6 +1,6 @@
 import './App.css';
-import MenuItem from './src/components/MenuItem';
-import Header from './src/components/Header';
+import MenuItem from './components/MenuItem';
+import Header from './components/Header';
 
 // import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. You can use bootstrap or your own classes by using the className attribute in your elements.
 
