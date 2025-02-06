@@ -46,14 +46,14 @@ const menuItems = [
     id: 6,
     title: 'Yakitori',
     description: 'Japanese skewered chicken',
-    imageName: '/images/yakitori.png',
+    imageName: 'yakitori.png',
     price: 2.99,
   },
   {
     id: 7,
     title: 'Takoyaki',
     description: 'Japanese octopus balls',
-    imageName: '/images/takoyaki.png',
+    imageName: 'takoyaki.png',
     price: 5.99,
   },
   {
